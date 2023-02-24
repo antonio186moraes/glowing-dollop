@@ -1,0 +1,121 @@
+.formacao{
+background-color: #141414;
+color: #ffff;
+}
+.formacao-conteiner{
+    max-width: 1200px;
+    padding:120px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
+
+
+.formacao .subtitulo{
+color: #000000;
+}
+.formacao-texto{
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 40ch;
+    margin-bottom: 60px;
+    color: #D9D9D9;
+    width: 503px;
+    margin-left: -40px;
+    margin-top: 50px;
+}
+.formacao-texto strong{
+    color:#569305 ;
+}
+.faculdade-lista{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 100px;
+    
+    width: 1100px;
+    margin-left: -600px;
+    
+}
+.faculdade{
+    background-color: #000000;
+    border: 2px solid #506CCE;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.faculdade-tipo {
+ font-size: .875rem;
+ text-transform: uppercase;
+ color: #7A7A7A;
+margin-bottom: 10px;
+}
+
+.roxo{
+    color: #9158ddfc;
+    font-size: 1.25rem;
+}
+
+.faculdade-curso{
+    flex: 1;
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    position: relative;
+}
+.faculdade-curso::before{
+    content: "";
+    display: block;
+    width: 4px;
+    height: 20px;
+    background-color: #67dd0a;
+    position: absolute;  
+    left: -40px;
+}
+
+
+.cursos-intensivos{
+    font-size: 2rem;
+    margin-left: -600px;
+    margin-top: 80px;
+}
+
+
+
+@media(max-width: 1000px){
+    .formacao .sub-titulo{
+        font-size: 4rem;
+    }
+    .formacao-texto{
+        font-size:1.1rem ;
+    }
+    .faculdade-lista{
+   display: grid;
+   grid-template-columns: 250px 250px;
+   justify-content: center;
+        }
+    .cursos-intensivos{
+        color: #7A7A7A;
+        margin-left: -180px;
+        
+        font-size: 1.8rem;
+    }
+}
+@media(max-width:800px){
+    .formacao-container{
+        grid-template-columns:1fr ;
+        padding: 60px 20px;
+        gap: 40px;
+    }
+    .formacao .sub-titulo{
+        color:#ffffff ;
+    }
+    .formacao-texto{
+        font-size: 1.25rem;
+    }
+}

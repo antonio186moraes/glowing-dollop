@@ -1,0 +1,49 @@
+body{
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    color: #141414;
+   
+}
+h1,
+h2,
+h3,
+p{
+    margin: 0px;
+}
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.sub-titulo{
+font-size: 7rem;
+color:#7b7b83 ;
+margin: 0 auto;
+text-transform: capitalize;
+}
+.sub-titulo::after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: #497514;
+    display: block;
+    margin-left:40px;
+    margin-top: -10px;
+}
+
+@media(max-width: 800px){
+    .sub-titulo{
+        font-size: 3rem;
+        text-transform: capitalize;
+        max-width: initial;
+        
+    }
+  
+}
